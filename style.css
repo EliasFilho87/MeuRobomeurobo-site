@@ -65,7 +65,7 @@ nav ul li a:hover {
 .logo img {
   padding-top: 30px;
   padding-bottom: 20px;
-  height: 250px;
+  height: 120px;
   margin-left: -90px; /* puxa a logo pra esquerda */
 }
 
@@ -145,3 +145,93 @@ nav ul li a:hover {
     height: 30px;
   }
   
+
+  .services {
+    background: linear-gradient(to right, #fff8dc, #fff3b0); /* Deixa um amarelo suave */
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .container-services {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .container-services h2 {
+    font-size: 2.5em;
+    color: #222;
+    font-family: 'Conthrax', sans-serif; /* Igual a identidade visual */
+    margin-bottom: 30px;
+  }
+  
+  .container-services p {
+    font-size: 1.2em;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  .services-offered {
+    padding: 80px 0;
+    background: #fff;
+  }
+  
+  .container-services-offered {
+    text-align: center;
+  }
+  
+  .container-services-offered h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    font-family: 'Conthrax', sans-serif;
+    color: #222;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+  
+  .card:hover {
+    background: #e0f7fa;
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  
+  .hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }

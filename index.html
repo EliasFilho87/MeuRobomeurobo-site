@@ -34,11 +34,94 @@
     </div>
     
     <div class="hero-image">
-      <img src="images/hero-image.png" alt="Automação">
+      <img src="images/robo-normal.png" alt="Meu Robo Inteligente" id="robo">
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container-services">
+      <h2>O QUE FAZEMOS?</h2>
+      <p>
+        Automatizamos processos, criamos robôs inteligentes, interligamos assistentes com IA e apps, 
+        para ajudar pequenas empresas a vender mais, responder clientes com velocidade 
+        e reduzir tarefas repetitivas. 
+        <br><br>
+        Isso tudo sem complicação, com soluções acessíveis e escaláveis.
+      </p>
+    </div>
+  </section>
+
+  <section class="services-offered" id="services">
+    <div class="container-services-offered hidden">
+      <h2>SERVIÇOS OFERECIDOS</h2>
+      <div class="cards">
+        
+        <a href="assistente-ia.html" class="card">
+          <img src="images/ia-assistente.png" alt="Assistente IA">
+          <h3>Assistente IA</h3>
+          <p>Robô inteligente que responde clientes no WhatsApp ou site, 24 horas!</p>
+        </a>
+  
+        <a href="textos-prontos.html" class="card">
+          <img src="images/textos-prontos.png" alt="Textos Prontos">
+          <h3>Textos Prontos</h3>
+          <p>Mensagens automáticas para WhatsApp, Instagram e Facebook, tudo pronto!</p>
+        </a>
+  
+        <a href="integracao.html" class="card">
+          <img src="images/integracao.png" alt="Integrações">
+          <h3>Integração Inteligente</h3>
+          <p>Conecte WhatsApp, Google Forms, Planilhas e automações sem complicação.</p>
+        </a>
+  
+        <a href="orcamento-automatico.html" class="card">
+          <img src="images/orcamento-automatico.png" alt="Orçamento Automático">
+          <h3>Orçamento Automático</h3>
+          <p>Seu cliente gera o próprio orçamento na hora! Sem perder vendas por demora.</p>
+        </a>
+  
+      </div>
     </div>
   </section>
   
+  
+  
+  
 
   <script src="script.js"></script>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+  
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach(el => observer.observe(el));
+  </script>
+
+<script>
+  const robo = document.getElementById('robo');
+
+  robo.addEventListener('mouseenter', () => {
+    setTimeout(() => {
+      robo.src = 'images/robo-piscando.png';
+    }, 400); // Espera 0.2 segundos para trocar
+  });
+
+  robo.addEventListener('mouseleave', () => {
+    setTimeout(() => {
+      robo.src = 'images/robo-normal.png';
+    }, 200); // Volta depois de 0.2 segundos também
+  });
+</script>
+
+
+  
 </body>
 </html>
