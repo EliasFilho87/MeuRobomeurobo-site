@@ -14,7 +14,14 @@ body {
 /* Header */
 header {
   background-color: #0ab3c9;
-  padding: 20px 0;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  height: 100px; /* Define altura fixa pro header */
+  overflow: hidden; /* Esconde qualquer excesso da logo */
+  
+  
+  
 }
 
 .container {
@@ -26,13 +33,16 @@ header {
   align-items: center;
 }
 
+nav {
+  margin-right: 80px; /* Ajuste fino para empurrar o menu para a esquerda */
+}
 nav ul {
   list-style: none;
   display: flex;
 }
 
 nav ul li {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 nav ul li a {
@@ -45,3 +55,93 @@ nav ul li a {
 nav ul li a:hover {
   color: #ffe600;
 }
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  height: 250px;
+  margin-left: -90px; /* puxa a logo pra esquerda */
+}
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px;
+    gap: 50px; /* Espaço entre texto e imagem */
+  }
+
+  .hero-text {
+    flex: 1;
+    max-width: 700px;
+  }
+  
+  .hero-text h1 {
+    font-family: 'Conthrax', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+  }
+
+
+  .hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+  
+.hero-image img {
+  width: 700px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; /* Garantir que fique certinho */
+}
+
+  .btn {
+    background-color: #00bcd4;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0097a7;
+  }
+  
+  
+  
+  .btn {
+    background-color: #00bcd4;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    transition: 0.3s;
+  }
+  
+  .btn img.icon {
+    width: 30px;
+    height: 30px;
+  }
+  
