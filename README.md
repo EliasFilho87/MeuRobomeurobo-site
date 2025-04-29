@@ -3,11 +3,6 @@
 Este projeto é um site profissional desenvolvido para apresentar os serviços de automação com inteligência artificial oferecidos pelo **MeuRobo**. A solução conecta pequenos negócios com tecnologia de ponta para atendimento automático, geração de orçamentos e integração com ferramentas como WhatsApp, Google Forms e muito mais.
 
 ---
-
-## 📷 Preview
-
-<img src="preview-site.png" width="100%" alt="Preview do site" />
-
 ---
 
 ## 🚀 Funcionalidades
@@ -21,7 +16,7 @@ Este projeto é um site profissional desenvolvido para apresentar os serviços d
 
 ## 🔗 Acesse o site
 
-➡️ [Clique aqui para acessar a versão online](https://seu-link.vercel.app)
+➡️ [Clique aqui para acessar a versão online](https://meu-robomeurobo-site.vercel.app/)
 
 ---
 
