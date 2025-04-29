@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.subpage-container {
+  max-width: 900px;
+  padding: 40px 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+.subpage-title {
+  font-family: 'Conthrax', sans-serif;
+  font-size: 2.5em;
+  color: #0ab3c9;
+  margin-bottom: 30px;
+}
+
+.subpage-description {
+  font-size: 1.2em;
+  color: #555555;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn, .btn-back {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.btn {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #0097a7;
+}
+
+.btn-back {
+  background-color: #eeeeee;
+  color: #333333;
+}
+
+.btn-back:hover {
+  background-color: #cccccc;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
