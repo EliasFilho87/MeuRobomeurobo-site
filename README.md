@@ -6,7 +6,7 @@ Este projeto é um site profissional desenvolvido para apresentar os serviços d
 
 ## 📷 Preview
 
-![Visualização do site](./preview-site.png)
+<img src="preview-site.png" width="100%" alt="Preview do site" />
 
 ---
 
